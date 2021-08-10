@@ -10,3 +10,10 @@ function changeBoxColor() {
 }
 
 changeBoxColor();
+
+function changeCenterBoxColor() {
+  let centerBox = document.querySelector('.center-content');
+  centerBox.style.background = 'white';
+}
+
+changeCenterBoxColor();
