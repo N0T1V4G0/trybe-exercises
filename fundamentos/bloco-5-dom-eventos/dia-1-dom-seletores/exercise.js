@@ -3,3 +3,10 @@ function changeP() {
 }
 
 changeP();
+
+function changeBoxColor() {
+  let box = document.getElementsByClassName('main-content')[0];
+  box.style.background = "rgb(76,164,109)";
+}
+
+changeBoxColor();
