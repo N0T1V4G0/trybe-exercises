@@ -44,3 +44,9 @@ for (let i = 0; i < numberList.length; i += 1) {
   numberNameList.innerHTML = numberList[i];
   numberListRight.appendChild(numberNameList);
 }
+//Exercicio 9
+//9. Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+for (let i = 1; i <= 3; i += 1) {
+  const subHeaderText = document.createElement('h3');
+  mainContent.appendChild(subHeaderText);
+}
