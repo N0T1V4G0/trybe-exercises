@@ -23,3 +23,8 @@ centerContent.appendChild(textSample);
 let leftContent = document.createElement('section');
 leftContent.className = 'left-content';
 mainContent.appendChild(leftContent);
+//Exercicio 6
+//6. Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+const rightSection = document.createElement('section');
+rightSection.className = 'right-content';
+mainContent.appendChild(rightSection);
