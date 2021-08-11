@@ -13,3 +13,8 @@ document.body.appendChild(mainContent);
 const centerContent = document.createElement('section');
 centerContent.className = 'center-content';
 mainContent.appendChild(centerContent);
+//Exercicio 4
+//4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+let textSample = document.createElement('p');
+textSample.innerHTML = "Algum texto";
+centerContent.appendChild(textSample);
