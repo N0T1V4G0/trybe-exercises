@@ -35,7 +35,22 @@ function putText() {
   techText.innerHTML = this.value;
 }
 
+//Exercício 4
+const myTop3 = document.querySelector('#mySpotrybefy');
+myTop3.addEventListener('dblclick', goToPage);
+function goToPage() {
+  window.location = 'http://www.w3schools.com';
+}
 
+//Exercício 5
+myTop3.addEventListener('mouseover', changeColor);
+myTop3.addEventListener('mouseleave', changeColorWhite);
+function changeColor() {
+  this.style.color = '#ff0000';
+}
+function changeColorWhite() {
+  this.style.color = '#ffffff';
+}
 
 // Segue abaixo um exemplo do uso de event.target:
 function resetText(event) {
