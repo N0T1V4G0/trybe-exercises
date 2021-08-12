@@ -20,15 +20,22 @@ Segue abaixo um exemplo do uso de event.target:
 */
 
 //Exercício 2
-function switchTech(event) {
+function switchTech() {
   const techChoice = document.querySelector('.tech');
   techChoice.classList.remove('tech');
-  event.target.classList.add('tech');
+  this.classList.add('tech');
 }
 
 firstLi.addEventListener('click', switchTech);
 secondLi.addEventListener('click', switchTech);
 thirdLi.addEventListener('click', switchTech);
+
+//Exercício 3
+input.addEventListener('input', putText);
+function putText() {
+  let techText = document.querySelector('.tech');
+  techText.innerHTML = this.value;
+}
 
 function resetText(event) {
   // O Event é passado como um parâmetro para a função.
