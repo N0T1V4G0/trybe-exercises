@@ -35,7 +35,12 @@ function putText() {
   techText.innerHTML = this.value;
 }
 
-
+//Exercício 4
+const myTop3 = document.querySelector('#mySpotrybefy');
+myTop3.addEventListener('dblclick', goToPage);
+function goToPage() {
+  window.location = 'http://www.w3schools.com';
+}
 
 // Segue abaixo um exemplo do uso de event.target:
 function resetText(event) {
