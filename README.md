@@ -46,9 +46,6 @@ Contém todas as atividades desenvolvidas por **[mim](https://www.linkedin.com/i
 - [x] 5.5 - Fundamentos - JavaScript - Projetos
 - [x] 5.5 - Projeto - Arte com Pixels
 - [x] 5.6 - Projeto - Lista de tarefas
-- [x] 5.7 - (Bônus) Projeto - Meme Generator
-- [x] 5.7 - (Bônus) Projeto - Adivinhe a Cor
-- [x] 5.7 - (Bônus) Projeto - Carta Misteriosa
 
 ##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
 
