@@ -55,7 +55,7 @@ Contém todas as atividades desenvolvidas por **[mim](https://www.linkedin.com/i
 - [x] 6.3 - CSS Flexbox - Parte 1
 - [x] 6.4 - CSS Flexbox - Parte 2
 - [x] 6.5 - CSS Responsivo - Mobile First
-- [x] 6.6 - Projeto - Página inicial do Facebook
+- [x] 6.6 - Projeto - Trybewarts
 
 ##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
 
