@@ -1,9 +1,3 @@
-const requestPokemonFromServer = callback => {
-  setTimeout(() => {
-    callback('squirtle');
-  }, 3000);
-};
-
 const appendPokemon = pokemon => {
   let ul = document.querySelector('ul');
   let li = document.createElement('li');
@@ -11,10 +5,10 @@ const appendPokemon = pokemon => {
   ul.appendChild(li);
 };
 
-const fetchPokemon = () => {
-  requestPokemonFromServer(pokemon => {
-    console.log(pokemon);
-  });
+const requestPokemon = pokemon => {
+  setTimeout(() => {
+    appendPokemon(pokemon);
+  }, 3000);
 };
 
-fetchPokemon();
+requestPokemon('pikachu');
