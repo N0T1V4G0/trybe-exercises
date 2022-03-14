@@ -11,3 +11,5 @@ const checkNumber = (num1, num2, num3) => {
     resolve(result);
   });
 };
+
+module.exports = checkNumber;
