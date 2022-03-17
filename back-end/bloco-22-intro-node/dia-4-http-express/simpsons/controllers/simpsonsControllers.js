@@ -15,10 +15,8 @@ exports.checkID = (req, res, next) => {
 };
 
 exports.validadeID = (req, res, next) => {
-  console.log(req.body.id);
   const { id } = req.body;
   const simpsonID = data.find((el) => el.id === id);
-  console.log(simpsonID);
   if (simpsonID) {
     return res.status(409).json({
       status: 'conflict',
@@ -48,8 +46,17 @@ exports.getAllSimpsons = (req, res) => {
   });
 };
 
-exports.createSimpson = (req, res) => {
-  // console.log(req);
-
-  res.send('oi');
+exports.createSimpson = (req, res, next) => {
+  const { id, name } = req.body;
+  const newSimpson = { id, name };
+  const newData = JSON.stringify([...data, newSimpson]);
+  fs.writeFile(FILEPATH, newData, (err) => {
+    return res.status(201).json({
+      status: 'success',
+      message: 'simpson created',
+      data: {
+        simpson: newSimpson,
+      },
+    });
+  });
 };
