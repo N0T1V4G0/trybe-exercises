@@ -1,6 +1,6 @@
 const express = require('express');
 const fs = require('fs');
-const simpsonsRouter = require('./routes/simpsonsRouter');
+const simpsonsRouter = require('./routes/simpsonsRoutes');
 
 const app = express();
 

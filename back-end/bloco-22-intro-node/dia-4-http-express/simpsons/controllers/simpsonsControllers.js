@@ -1,19 +1,13 @@
 const fs = require('fs');
 
 const FILEPATH = `${__dirname}/../data/simpsons.json`;
+const data = JSON.parse(fs.readFileSync(FILEPATH, 'utf-8'));
 
-exports.getAllSimpsons = async (req, res, next) => {
-  try {
-    await fs.readFile(FILEPATH, 'utf-8', (err, data) => {
-      const jsonData = JSON.parse(data);
-      return res.status(200).json({
-        status: 'success',
-        data: {
-          simpsons: jsonData,
-        },
-      });
-    });
-  } catch (e) {
-    next(e);
-  }
+exports.getAllSimpsons = (req, res, next) => {
+  return res.status(200).json({
+    status: 'success',
+    data: {
+      simpsons: data,
+    },
+  });
 };
