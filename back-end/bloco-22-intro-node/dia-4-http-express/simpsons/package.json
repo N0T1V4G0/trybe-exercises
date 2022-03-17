@@ -4,7 +4,7 @@
   "description": "simple simpsons api",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "echo no tests",
     "dev": "nodemon index.js"
   },
   "author": "Lucas Barbosa",

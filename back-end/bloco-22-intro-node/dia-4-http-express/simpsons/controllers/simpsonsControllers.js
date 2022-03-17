@@ -14,6 +14,20 @@ exports.checkID = (req, res, next) => {
   next();
 };
 
+exports.validadeID = (req, res, next) => {
+  console.log(req.body.id);
+  const { id } = req.body;
+  const simpsonID = data.find((el) => el.id === id);
+  console.log(simpsonID);
+  if (simpsonID) {
+    return res.status(409).json({
+      status: 'conflict',
+      message: 'ID already exists',
+    });
+  }
+  next();
+};
+
 exports.getSimpson = (req, res) => {
   const simpson = data.find((el) => el.id === req.params.id);
   return res.status(200).json({
@@ -32,4 +46,10 @@ exports.getAllSimpsons = (req, res) => {
       simpsons: data,
     },
   });
+};
+
+exports.createSimpson = (req, res) => {
+  // console.log(req);
+
+  res.send('oi');
 };
